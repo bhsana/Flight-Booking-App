@@ -45,10 +45,6 @@ public class Sign extends AppCompatActivity {
                 startActivity(intent1);
                 return true;
 
-            case R.id.menu_dest:
-                Intent intent2 = new Intent(this, Destinations.class);
-                startActivity(intent2);
-                return true;
             case R.id.menu_book:
                 Intent intent3 = new Intent(this, Book.class);
                 startActivity(intent3);
