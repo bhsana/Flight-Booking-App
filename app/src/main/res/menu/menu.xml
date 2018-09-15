@@ -1,0 +1,32 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    >
+    <item android:title="home"
+        android:id="@+id/menu_home"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/menu_dest"
+        android:title="@string/destination" />
+
+    <item android:id="@+id/menu_book"
+        android:title="Book a flight" />
+    <item android:title="Log in"
+        android:id="@+id/menu_log"
+        />
+    <item android:id="@+id/menu_share"
+        android:title="Share"
+        />
+
+    <item android:title="Contact us"
+        android:id="@+id/menu_contact"
+        >
+
+
+</item>
+
+
+</menu>

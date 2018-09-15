@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="User name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textuser"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textuser"
+        android:layout_alignLeft="@+id/textuser"
+        android:layout_alignStart="@+id/textuser"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textpassword"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edituser"
+        android:layout_alignBaseline="@+id/textuser"
+        android:layout_alignBottom="@+id/textuser"
+        android:layout_alignLeft="@+id/editpassword"
+        android:layout_alignStart="@+id/editpassword"
+        android:hint="Enter ur user name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textPassword"
+        android:ems="10"
+        android:id="@+id/editpassword"
+        android:hint="Enter ur password"
+        android:layout_alignBaseline="@+id/textpassword"
+        android:layout_alignBottom="@+id/textpassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/blogin"
+        android:layout_below="@+id/editpassword"
+        android:layout_alignRight="@+id/editpassword"
+        android:layout_alignEnd="@+id/editpassword"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="LogOn" />
+
+    <TextView
+        android:text="No account? Make one now ! "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textpassword"
+        android:layout_alignStart="@+id/textpassword"
+        android:layout_marginBottom="76dp"
+        android:id="@+id/textView8"
+        android:textColor="@android:color/holo_red_light"
+
+        />
+
+    <Button
+        android:text="Sign in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/bsignin"
+        android:onClick="Account"/>
+
+</RelativeLayout>

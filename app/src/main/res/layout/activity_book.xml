@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerDest"
+        android:spinnerMode="dialog"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="144dp"
+        android:layout_marginStart="144dp"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt" />/>
+
+    <TextView
+        android:text="Destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Deprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerDest"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:id="@+id/spinnerDep"
+
+        android:layout_alignLeft="@+id/spinnerDest"
+        android:layout_alignStart="@+id/spinnerDest"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt"
+        android:spinnerMode="dialog" />/>
+
+    <TextView
+        android:text="From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_below="@+id/spinnerDep"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="Till"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_alignBaseline="@+id/dateAnd"
+        android:layout_alignBottom="@+id/dateAnd"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/images"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/dateAnd"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/dateStart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Select Date..."
+
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/spinnerDep"
+        android:layout_alignStart="@+id/spinnerDep" />
+
+    <EditText
+        android:id="@+id/dateAnd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Select Date..."
+
+        android:layout_below="@+id/dateStart"
+        android:layout_alignLeft="@+id/dateStart"
+        android:layout_alignStart="@+id/dateStart" />
+
+    <Button
+        android:text="Book it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bBook"
+
+        android:onClick="Book_it"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="80dp" />
+
+</RelativeLayout>

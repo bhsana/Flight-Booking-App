@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Flight_Booking</string>
+    <string name="btD">DESTINATIONS</string>
+    <string name="btB">BOOK FLIGHT</string>
+    <string name="btL">LOGIN</string>
+    <string name="btC">CONTACT US</string>
+    <string name="btS">SHARE</string>
+    <string-array name="editMenu">
+        <item>Destination</item>
+        <item>Depart</item>
+    </string-array>
+    <string name="destination">Destination Country</string>
+    <string name="departure">Departure</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Tunisia</item>
+        <item>India</item>
+        <item>Mexico</item>
+        <item>Almagne</item>
+        <item>Italy</item>
+        <item>Korea</item>
+        <item>Switzerland</item>
+        <item>Tailand</item>
+        <item>Turkey</item>
+        <item>United Kingdom</item>
+        <item>Espagne</item>
+        <item>Canada</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
